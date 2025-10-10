@@ -22,7 +22,7 @@ const AddInterview = ({ isOpen, onClose }) => {
       const currentUser = JSON.parse(localStorage.getItem("user"));
 
       const response = await axios.post(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-exp:generateContent?key=${
           import.meta.env.VITE_GEMINI_API_KEY
         }`,
         {
